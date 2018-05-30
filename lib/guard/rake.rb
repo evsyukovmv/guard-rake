@@ -47,6 +47,14 @@ module Guard
       def run_on_modifications(paths)
         run_rake_task(paths)
       end
+
+      def run_on_additions(paths)
+        run_rake_task(paths)
+      end
+
+      def run_on_removals(paths)
+        run_rake_task(paths)
+      end
     end
 
     def run_rake_task(paths=[])
